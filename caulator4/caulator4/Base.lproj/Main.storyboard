@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="caulator4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="76S-Ga-Gqf">
+                                <rect key="frame" x="10" y="64" width="394" height="788"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-Fc-OsX">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="56.5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <color key="highlightedColor" systemColor="labelColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-w6-nLE">
+                                        <rect key="frame" x="0.0" y="136.5" width="394" height="651.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-yb-CoA">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="100.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zd-v9-eLF" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="log10">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpu-sh-9Mt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYb-r8-vYx" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="1/x">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugN-SZ-jzz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEx-Mw-aC8" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="ln">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HE-OY-Kuy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehi-hH-lux" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="x^y">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0IR-Tz-dZ8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OGL-H3-0Ub">
+                                                <rect key="frame" x="0.0" y="110.5" width="394" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIv-UK-4lc" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8g-89-uPB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1q-S3-gmO" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="√">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPU-Ln-PcU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yci-RW-kAF" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U0J-yh-39g"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPw-MN-Q9R" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myo-tg-6Fo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ag4-1T-PsY">
+                                                <rect key="frame" x="0.0" y="220.5" width="394" height="100.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wop-Hs-3lQ" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcU-SC-TLO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-Ls-SEs" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9R-UO-rlT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeq-BO-0Rr" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxs-FD-9GN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-Pe-b0Q" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCK-1W-Qc0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hnh-Wv-5FD">
+                                                <rect key="frame" x="0.0" y="331" width="394" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="749-f9-JpG" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4T-bs-7FT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h79-39-oZs" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BK-SE-1rR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNc-vd-iGw" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5fE-vS-zJS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya2-CR-3YB" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLe-MX-Vl0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jc2-ge-5WO">
+                                                <rect key="frame" x="0.0" y="441" width="394" height="100.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqU-io-rlF" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bN-qa-L0R"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwV-eb-1Za" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3h0-Qe-rve"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh5-0D-Om7" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgW-MK-Ws3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbe-Pi-RIu" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="100.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GwD-2H-3WV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-ZN-dyf">
+                                                <rect key="frame" x="0.0" y="551.5" width="394" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtS-cY-6nV" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7O-x0-FwE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPR-qw-3cP" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="134.5" y="0.0" width="125" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6n-NA-FZN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lV0-sz-7Tj" colorLabel="IBBuiltInLabel-Red">
+                                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" systemColor="systemGray6Color"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="performOPeration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2aF-hJ-pu7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="76S-Ga-Gqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="LW3-hb-QHI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="76S-Ga-Gqf" secondAttribute="trailing" constant="10" id="PyY-Ek-laV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="76S-Ga-Gqf" secondAttribute="bottom" constant="10" id="SAc-Jw-j52"/>
+                            <constraint firstItem="76S-Ga-Gqf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kzQ-iL-2kB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="FXw-Fc-OsX" id="KSb-0f-bqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
